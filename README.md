@@ -1,2 +1,4 @@
 # Evidencia_final_semana_tec
 Repositorio para evidencia de proyecto de clase el arte de la programación semestre agosto-diciembre 2025
+
+Se realizaron cambios a la velocidad de los fantasmas en las lineas 28-31, además de correciones en base a PEP8, resolviendo F405 y F403.

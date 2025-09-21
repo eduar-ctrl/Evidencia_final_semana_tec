@@ -16,6 +16,11 @@ from freegames import floor, vector
 
 state = {'score': 0}
 path = Turtle(visible=False)
+pellet = Turtle(visible=False)
+pellet.penup()
+pellet.shape('triangle')    
+pellet.color('gold')    
+pellet.shapesize(0.35, 0.35, 0)
 writer = Turtle(visible=False)
 aim = vector(5, 0)
 pacman = vector(-40, -80)
@@ -102,9 +107,9 @@ def world():
             square(x, y)
 
             if tile == 1:
-                path.up()
-                path.goto(x + 10, y + 10)
-                path.dot(2, 'white')
+                pellet.goto(x + 10, y + 10)
+                pellet.setheading(90)
+                pellet.stamp()
 
 
 def move():
